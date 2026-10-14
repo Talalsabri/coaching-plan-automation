@@ -7,6 +7,8 @@
 **Payment in, personalised training plan out.**
 AI drafts it, the coach approves it twice, the trainee gets a branded PDF.
 
+<sub>Built for **Mosabri | موصبري**, an online running coach.</sub>
+
 <img src="assets/n8n-workflow-en.png" alt="The full n8n workflow: purchase, survey, Claude, text to PDF, send, and a missing-email guard" width="100%">
 
 </div>
@@ -38,6 +40,10 @@ A payment webhook filters paid packages and first-time buyers, then emails the s
 
 <img src="assets/n8n-purchase-survey-en.png" alt="Purchase and survey stages" width="100%">
 
+<div align="center">
+<img src="assets/results-email-survey.png" alt="The survey email a new trainee receives" width="720">
+</div>
+
 ### Four ways to write a plan
 New (from the survey), **revise** (applies only the coach's note and copies the rest word for word), **weekly update** (progressive load) and **regenerate** (rebuilds from edited trainee data). One shared block holds the coach's rules.
 
@@ -52,6 +58,13 @@ The PDF is rebuilt from the approved text, one file per part (training, prep, nu
 Nothing reaches a trainee before both approvals. A missing email sends the file back for approval, an in-progress status prevents double processing, and error, infrastructure and uptime alerts reach the coach by email.
 
 <img src="assets/n8n-send-en.png" alt="Send stage and missing-email guard" width="100%">
+
+### Never stops silently
+An external monitor checks the system every 5 minutes and emails the team the moment it stops responding.
+
+<div align="center">
+<img src="assets/monitoring-en.png" alt="Uptime monitor: HTTP check every 5 minutes, 100% uptime, response-time chart" width="640">
+</div>
 
 ### Safety rules built in
 Injuries are never diagnosed, food allergies are excluded, and beginners get a run/walk program instead of a race plan.
@@ -78,8 +91,24 @@ Injuries are never diagnosed, food allergies are excluded, and beginners get a r
 
 Purchase → survey → plan → PDF → email, verified end to end for both new and returning trainees. No plan is sent without both approvals, by design.
 
+**The coach's board in Notion**
+
 <div align="center">
-<img src="assets/results-plan-en.png" alt="An AI-drafted plan in Notion, ready for the coach to edit" width="560">
+<img src="assets/results-notion-table.png" alt="Notion board of trainees with package, week and status" width="860">
 </div>
 
-<sub>Plans are written in Arabic. Client identity, credentials and trainee data are intentionally excluded from this repository.</sub>
+**An AI-drafted plan with its reasoning, ready to edit**
+
+<div align="center">
+<img src="assets/results-notion-notes.png" alt="Notion plan page with the AI's notes on its decisions" width="520">
+</div>
+
+**What the trainee receives**
+
+<div align="center">
+<img src="assets/results-pdf.png" alt="The branded PDF: cover and contents pages" width="460">
+<br><br>
+<img src="assets/results-email-plan.png" alt="The delivery email with the PDF attached and a WhatsApp button" width="720">
+</div>
+
+<sub>Plans are written in Arabic. Trainee names, contact details and credentials are blurred or excluded.</sub>

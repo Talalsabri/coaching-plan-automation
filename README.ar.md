@@ -7,6 +7,8 @@
 **يدفع المتدرب، فتصله خطة تدريب مخصصة.**
 الذكاء الاصطناعي يكتبها، والمدرب يعتمدها مرتين، والمتدرب يستلمها بصيغة PDF بهوية العلامة.
 
+<sub>صُمّم لـ **موصبري | Mosabri**، مدرب جري أونلاين.</sub>
+
 <img src="assets/n8n-workflow-ar.png" alt="سير العمل الكامل في n8n: الشراء، الاستبيان، Claude، تحويل النص إلى PDF، الإرسال، وحارس البريد المفقود" width="100%">
 
 </div>
@@ -50,6 +52,10 @@
 
 <img src="assets/n8n-purchase-survey-ar.png" alt="مرحلتا الشراء والاستبيان" width="100%">
 
+<div align="center">
+<img src="assets/results-email-survey.png" alt="رسالة الاستبيان التي يستلمها المتدرب الجديد" width="720">
+</div>
+
 <div dir="rtl">
 
 ### أربع طرق لكتابة الخطة
@@ -76,6 +82,17 @@
 </div>
 
 <img src="assets/n8n-send-ar.png" alt="مرحلة الإرسال وحارس البريد المفقود" width="100%">
+
+<div dir="rtl">
+
+### لا يتوقف بصمت
+مراقب خارجي يفحص النظام كل 5 دقائق ويرسل بريدًا للفريق لحظة توقفه عن الاستجابة.
+
+</div>
+
+<div align="center">
+<img src="assets/monitoring-ar.png" alt="مراقب التشغيل: فحص HTTP كل 5 دقائق، تشغيل 100%، ومنحنى زمن الاستجابة" width="640">
+</div>
 
 <div dir="rtl">
 
@@ -108,10 +125,34 @@
 
 الشراء ← الاستبيان ← الخطة ← PDF ← البريد، تم التحقق منه من البداية للنهاية لمتدرب جديد ومتدرب سابق. ولا خطة تُرسل بدون الاعتمادين بحكم التصميم.
 
+**لوحة المدرب في Notion**
+
 </div>
 
 <div align="center">
-<img src="assets/results-plan-ar.png" alt="خطة كتبها الذكاء الاصطناعي في Notion وجاهزة لتعديل المدرب" width="560">
+<img src="assets/results-notion-table.png" alt="لوحة المتدربين في Notion مع الباقة والأسبوع والحالة" width="860">
 </div>
 
-<div dir="rtl"><sub>هوية العميل وبيانات الدخول وبيانات المتدربين مستبعدة عمدًا من هذا المستودع.</sub></div>
+<div dir="rtl">
+
+**خطة كتبها الذكاء الاصطناعي مع تفسير قراراته، وجاهزة للتعديل**
+
+</div>
+
+<div align="center">
+<img src="assets/results-notion-notes.png" alt="صفحة الخطة في Notion مع ملاحظات الذكاء الاصطناعي على قراراته" width="520">
+</div>
+
+<div dir="rtl">
+
+**ما يستلمه المتدرب**
+
+</div>
+
+<div align="center">
+<img src="assets/results-pdf.png" alt="ملف PDF بهوية العلامة: الغلاف والفهرس" width="460">
+<br><br>
+<img src="assets/results-email-plan.png" alt="بريد التسليم مع الملف المرفق وزر واتساب" width="720">
+</div>
+
+<div dir="rtl"><sub>الخطط مكتوبة بالعربية. أسماء المتدربين وبيانات التواصل وبيانات الدخول مُخفاة أو مستبعدة.</sub></div>
